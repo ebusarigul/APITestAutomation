@@ -2,6 +2,9 @@ package TestDatalari;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TestDataJsonPlaceholder {
 
 
@@ -32,6 +35,28 @@ public class TestDataJsonPlaceholder {
         expectedData.put("body", body);
 
         return expectedData;
+
+    }
+
+    /*
+    {
+               "title":"Ahmet",
+               "body":"Merhaba",
+               "userId":10,
+               "id":70
+               {
+     */
+
+    public static Map<String,Object> bodyOlusturMap(){
+
+        Map<String,Object> bodyMap = new HashMap<>();
+
+        bodyMap.put("title","Ahmet");
+        bodyMap.put("body","Merhaba");
+        bodyMap.put("userId",10.0);
+        bodyMap.put("id",70.0);
+
+        return bodyMap;
 
     }
 
